@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            max-width: 900px;
+        }
+        .gallery-item {
+            background: white;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .gallery-item p {
+            margin: 10px 0 0;
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 480px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="./Images/Image (1).jpg" alt="Creative Design Workspace">
+            <p>Creative Design Workspace</p>
+        </div>
+        <div class="gallery-item">
+            <img src="./Images/Image (2).jpg" alt="3D Model in Progress">
+            <p>3D Model in Progress</p>
+        </div>
+        <div class="gallery-item">
+            <img src="./Images/Image (5).jpg" alt="Packing Orders">
+            <p>Packing Orders</p>
+        </div>
+        <div class="gallery-item">
+            <img src="./Images/Image (4).jpg" alt="Startup Planning">
+            <p>Startup Planning</p>
+        </div>
+        <div class="gallery-item">
+            <img src="./Images/Image (1).jpg" alt="Product Packaging">
+            <p>Product Packaging</p>
+        </div>
+        <div class="gallery-item">
+            <img src="./Images/Image (2).jpg" alt="Young Entrepreneur at Work">
+            <p>Young Entrepreneur at Work</p>
+        </div>
+        <div class="gallery-item">
+            <img src="./Images/Image (5).jpg" alt="Tech Innovation Lab">
+            <p>Tech Innovation Lab</p>
+        </div>
+        <div class="gallery-item">
+            <img src="./Images/Image (4).jpg" alt="Graphic Design Project">
+            <p>Graphic Design Project</p>
+        </div>
+    </div>
+</body>
+</html>
